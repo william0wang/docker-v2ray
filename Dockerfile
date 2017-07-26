@@ -17,6 +17,7 @@ RUN set -ex && \
     unzip temp.zip && \
     cp ./v2ray*/v2ray /usr/bin/v2ray && \
     cd .. && \
+    chmod 755 /usr/bin/v2ray && \
     rm -rf /tmp/*
 
 USER nobody
