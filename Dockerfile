@@ -5,7 +5,7 @@
 FROM alpine
 MAINTAINER William Wang <william@10ln.com>
 
-ARG SS_VER=2.33.1
+ARG SS_VER=2.51.1
 ARG SS_URL=https://github.com/v2ray/v2ray-core/releases/download/v$SS_VER/v2ray-linux-64.zip
 
 ENV SERVER_PORT 8388
