@@ -16,8 +16,10 @@ RUN set -ex && \
     wget --no-check-certificate $SS_URL -O temp.zip && \
     unzip temp.zip && \
     cp ./v2ray*/v2ray /usr/bin/v2ray && \
+    cp ./v2ray*/v2ctl /usr/bin/v2ctl && \
     cd .. && \
     chmod 755 /usr/bin/v2ray && \
+    chmod 755 /usr/bin/v2ctl && \
     rm -rf /tmp/*
 
 USER nobody
